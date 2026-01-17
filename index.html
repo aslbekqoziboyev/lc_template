@@ -28,7 +28,7 @@
         background: #64748b; 
       }
     </style>
-  <script type="importmap">
+  <scripy type="importmap">
 {
   "imports": {
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
@@ -38,7 +38,14 @@
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
   }
 }
-</script>
+</scripy>
+
+  <script>
+    // Global configuration for backend API URL
+    window.backendConfig = {
+      apiUrl: "https://api.educentercrm.com" // Replace with your actual backend API URL
+    };
+  </script>
 
 </head>
   <body>

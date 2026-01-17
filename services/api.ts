@@ -32,14 +32,14 @@ const request = async (endpoint: string, options: RequestInit = {}) => {
 
 export const api = {
   // Auth
-  login: (credentials: any) => request('/auth/login', {
+  login: (credentials: any) => request('/api/auth/login', {
     method: 'POST',
     body: JSON.stringify(credentials),
   }),
 
   // Users (Teachers/Admins)
   getUsers: () => request('/users'),
-  createUser: (user: Partial<User>) => request('/users', {
+  createUser: (user: Partial<User>) => request('/api/users', {
     method: 'POST',
     body: JSON.stringify(user),
   }),
